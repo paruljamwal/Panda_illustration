@@ -32,8 +32,32 @@ body{
     height: 66%;
     background-color: #fff radial-gradient(ellipse farthest-corner at 60% 50%, transparent 60% , hsla(0,0%,80%,0.5) 60% 75%, #fff 75% 100%) ;
     border-radius: 50%;
+    position: absolute;
  left: 49.5%;
  right: 43.5%;
  transform: translate(-50%,-50%);
- position: absolute;
+}
+
+/* panda ears  */
+.panda__ears{
+    width: 15%;
+    height: 15%;
+    background-color:  hsla(0, 0%, 25%, 1);
+    border-radius: 100% 120% 0 0 / 120% 140% 0 0;
+    border:  2vmin solid hsla(0,0%,0%,1);
+    transform-origin: right bottom;
+    left: 0;
+    top: 0;
+    clip-path: inset(0 0 30% 0);
+    position: absolute;
+}
+
+/* placing ears  */
+
+.panda__ears--left{
+    transform: rotate(-45deg) translate(110%,110%) ;
+}
+
+.panda__ears--right{
+    transform: rotate(45deg) translate(240%,-200%) ;
 }
