@@ -1,0 +1,39 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    position: relative;
+    min-height: 100vh;
+}
+
+:root{
+    --size:80;
+    --unit:calc(var(--size)/820*1vmin);
+}
+
+.panda{
+    width: calc(820 * var(--unit));
+    height: calc(512 * var(--unit));
+    background-color: hsla(30,50%,70%,0.5);
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+
+
+}
+
+
+/* panda head  */
+
+.panda__head{
+    width: 46%;
+    height: 66%;
+    background-color: #fff radial-gradient(ellipse farthest-corner at 60% 50%, transparent 60% , hsla(0,0%,80%,0.5) 60% 75%, #fff 75% 100%) ;
+    border-radius: 50%;
+ left: 49.5%;
+ right: 43.5%;
+ transform: translate(-50%,-50%);
+ position: absolute;
+}
